@@ -1,0 +1,139 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+//If you add or delete columns for the User, you will need to add/delete
+//those columns in the userServices methods!!!
+
+//insert into user(firstName, lastName, email, password, isAdmin, isHeadCoach, isAssistantCoach, isCoach, isMentor, isStudent, isActive, codeforcesUsername, leetcodeUsername, uhuntId) values ('angelo', 'bell', 'angelo@iastate.edu', 'Testtest123!', 0, 0, 0, 0, 0, 1, 1, null, null, null);
+model User {
+  id Int @id @default(autoincrement())
+  firstName String
+  lastName String
+  email String @unique
+  password Password? // should always be populated
+  phone String?
+  isAdmin Int
+  isHeadCoach Int
+  isAssistantCoach Int
+  isCoach Int
+  isMentor Int
+  isStudent Int
+  isActive Int
+  leetcodeUsername String?
+  codeforcesUsername String?
+  uhuntId Int?
+}
+
+// Kept as a seperate model.
+// !Do NOT return this to the user! It should never leave the service layer!
+//
+// Each user's password is put through a 1-way cryptographic hash using a salt
+// While this can't protect a single user's password, it helps make attacks
+// using rainbow tables infeasable against the list of passwords as a whole
+model Password {
+  hash  String
+  userId Int @unique
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Category {
+  id Int @id @default(autoincrement())
+  name String
+  isDefault Int
+}
+
+model SubmissionImage {
+  userId Int
+  problemId Int
+  img String @db.LongText
+  @@id([userId, problemId])
+}
+
+model Difficulty {
+    id Int @id @default(autoincrement())
+    name String @unique
+    isDefault Int
+}
+
+model Problem {
+    id Int @id @default(autoincrement())
+    name String
+    linkUrl String
+    videoUrl String?
+    difficultyId Int
+    isDefault Int
+}
+
+model ProblemToCategory {
+  problemId Int
+  categoryId Int
+  @@id([problemId, categoryId])
+}
+
+model OrganizationToDifficultyMapping {
+  organizationId Int
+  difficultyId Int
+  @@id([organizationId, difficultyId])
+}
+
+model Team {
+  id Int @id @default(autoincrement())
+  name String
+}
+
+model TeamToOrganization {
+  teamId Int
+  organizationId Int
+  @@id([teamId, organizationId])
+}
+
+model UserToTeam {
+  teamId Int
+  userId Int
+  @@id([teamId, userId])
+}
+
+model Organization {
+  id Int @id @default(autoincrement())
+  name String
+}
+
+model UserToOrganization {
+  userId Int
+  organizationId Int
+  @@id([userId, organizationId])
+}
+
+model OrgToCategoryMapping {
+  organizationId Int
+  categoryId Int
+  @@id([organizationId, categoryId])
+}
+
+model OrgToProbMapping {
+  organizationId Int
+  probId Int
+  @@id([organizationId, probId])
+}
+
+model CompletedProblems {
+  userId Int
+  problemId Int
+  timestamp String
+  @@id([userId, problemId])
+}
+
+model GraduatedArchive {
+  userId Int @id
+  major String
+  yearGraduated Int
+}

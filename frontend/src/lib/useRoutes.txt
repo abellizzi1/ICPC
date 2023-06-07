@@ -1,0 +1,54 @@
+import { useNavigate } from 'react-router-dom';
+
+export class Navigator {
+
+	public navigate : Function;
+
+	constructor() {
+		this.navigate = useNavigate();
+	}
+
+	useLandingPage() {
+		this.navigate('/');
+	}
+
+	useRegistrationPage() {
+		this.navigate('/registration');
+	}
+
+	useUserInfoPage() {
+		this.navigate('/userinfo');
+	}
+
+	useEditUserInfoPage() {
+		this.navigate('/userinfo/edit');
+	}
+
+	useCodeForcesProgressPage() {
+		this.navigate('/userinfo/codeforces');
+	}
+
+	useLeetcodeProgressPage() {
+		this.navigate('/userinfo/leetcode');
+	}
+
+	useUhuntProgressPage() {
+		this.navigate('/userinfo/uhunt');
+	}
+
+	useInputUsernamesPage() {
+		this.navigate('/userinfo/change-usernames');
+	}
+
+	useDashboardPage() {
+		this.navigate('/dashboard');
+	}
+
+	useSubmissionPage() {
+		this.navigate('/submission');
+	}
+
+	useMyTeamPage() {
+		this.navigate('/myteam');
+	}
+}

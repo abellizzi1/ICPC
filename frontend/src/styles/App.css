@@ -1,0 +1,202 @@
+.App {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* font-size: calc(10px + 2vmin); */
+	color: white;
+	/* text-align: center; */
+}
+
+
+
+.modheader {
+    /* margin-bottom: 12vh; */
+    padding-bottom: 12vh;
+}
+
+.RegForm {
+	display: grid;
+	columns: 1;
+	margin-top: 0.6em;
+	min-width: 20vw;
+	max-width: 50vw;
+}
+
+.RegForm input {
+	margin: 0.2em;
+	padding: 0.4em;
+	text-align: center;
+}
+
+/* 
+.Button {
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	padding: 10px 60px;
+	border-radius: 5px;
+	margin: 10px 0px;
+	cursor: pointer;
+} 
+*/
+
+.navbar-text {
+	font-size: 28px;
+}
+
+.sidebar-button {
+	margin-top: 8px;
+	margin-left: 16px;
+}
+
+
+.Caret-hide .dropdown-toggle::after {
+	display: none;
+}
+
+.sidebar-menu {
+	width: fit-content;
+}
+
+.sidebar-header {
+	width: 100%;
+}
+
+#sidebar-nav-cont {
+	flex-direction: column;
+	font-size: 20px;
+	width: 80%;
+}
+
+#sidebar-nav-cont > * {
+	margin-bottom: 1.4em;
+	width: 100%;
+}
+
+.dropdown-menu {
+	width: 100%;
+	position: relative;
+}
+
+.dropdown-item {
+	display: grid;
+	justify-items: center;
+}
+
+#dropdown-icon {
+	margin-right: 12px;
+	margin-bottom: 4px;
+}
+
+#dash-cards {
+	min-width: 50vw;
+	width: 100%;
+	margin-bottom: 20px;
+	max-height:500px;
+	overflow-y:scroll;
+}
+
+#recentlyAssignedHeader, #recentlyCompletedHeader {
+	background-color: #f8f4f4;
+}
+
+#card-button {
+	width: 100%;
+}
+
+#config-cards {
+	min-width: 90vw;
+    width: 100%;
+    padding: 5px;
+}
+
+/* 
+#config-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+*/
+
+#config-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#config-tab-info {
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* #AddProblemOCHead {
+    margin-bottom: 0;
+    padding-bottom: 0;
+} */
+
+#AddProblemOCBody, #EditProblemOCBody,
+#AddCategoryOCBody, #EditCategoryOCBody,
+#AddDifficultyOCBody, #EditDifficultyOCBody, 
+#EditTeamOCBody, #EditUserOCBody {
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#ProblemForm, #CategoryForm, #DifficultyForm {
+	display: grid;
+	columns: 1;
+	min-width: 30vw;
+	max-width: 50vw;
+    text-align: center;
+}
+
+#ProblemForm p, #CategoryForm p, #DifficultyForm p {
+    margin: 0;
+    padding: 0.1em;
+}
+
+#ProblemForm input, #ProblemForm select,
+#CategoryForm input, #DifficultyForm input {
+	margin: 0.2em;
+    margin-bottom: 0.4em;
+	padding: 0.4em;
+	text-align: center;
+}
+
+#ProblemForm #AddProbOCBtn, #ProblemForm #EditProbOCBtn,
+#CategoryForm #AddCatOCBtn, #CategoryForm #EditCatOCBtn,
+#DifficultyForm #AddDiffOCBtn, #DifficultyForm #EditDiffOCBtn, 
+#TeamForm #EditTeamOCBtn {
+    margin-top: 2em;
+}
+
+.NewTeamForm {
+	display: grid;
+	columns: 1;
+	margin-top: 0.6em;
+	width: 30vw;
+}
+
+.NewTeamHeader {
+    width: 30vw;
+}
+
+.NewTeamForm input {
+	margin: 0.2em;
+	padding: 0.4em;
+	text-align: center;
+}
+
+@media (max-width: 780px) {
+	
+	.navbar-text {
+		font-size:22px;
+	}
+}

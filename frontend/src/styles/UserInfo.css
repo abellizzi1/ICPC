@@ -1,0 +1,249 @@
+#firstRow {
+  margin-top:100px;
+}
+
+
+.editTxtInput {
+	margin-top:1vw;
+}
+
+#backToUserInfoBtn {
+	width:250px;
+	margin-bottom: 50px;
+}
+
+body{ margin:0; font-family:'tahoma'}
+
+nav {
+  margin:0 auto;
+  height:auto;
+  width:100%;
+  display:inline-block;
+  text-align: center;
+  background:transparent;
+}
+
+nav ul {
+  margin:0;padding:0;
+  list-style-type:none;
+  display:inline-block;
+}
+
+nav ul li {
+  position:relative;
+  margin:0 20px 0 0;
+  display:inline-block;
+}
+
+li > a:after { content: ' »'; } /* Change this in order to change the Dropdown symbol */
+
+li > a:only-child:after { content: ''; }
+
+nav ul li a {
+  padding:20px;
+  display:inline-block;
+  color:black;
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  opacity:0.5;
+  transition-timing-function: ease-out;
+	transition: .2s;
+}
+
+nav ul li a:active {
+  color:blue;
+  transition-timing-function: ease-out;
+	transition: .2s;
+}
+
+nav ul li ul {
+  display:none;
+  position:absolute;
+  left:0;
+  background:white;
+  float:left;
+}
+
+nav ul li ul li {
+  width:100%;
+  border-bottom:1px solid rgba(255,255,255,.3);
+}
+
+nav ul li:hover ul {
+  display:block;
+}
+
+#title-dropdown {
+	color:white;
+}
+
+.RowBottomMargin {
+  margin-bottom:10px;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.userInfoRows {
+  width:450px;
+}
+
+.tmContainer {
+  outline-style: solid;
+  width:70vw;
+  padding:5px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.name-field {
+  font-size:25px;
+  text-align:center;
+}
+
+.tm-button {
+  width:90%;
+  font-size:25px;
+}
+
+.leave-team {
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.leftCol {
+  white-space:nowrap;
+}
+
+.problemsContainer {
+  width:100%;
+  padding:5px;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+
+.problemRow {
+  transition: 0.2s ease-in;
+}
+
+.problemRow:hover {
+  background-color: rgb(20, 20, 20);
+  transition: 0.2s ease-in;
+}
+
+.triggerClosed {
+  font-size:30px;
+  transition:0.1s ease-out;
+}
+
+.triggerClosed:hover {
+  font-weight:bold;
+  transition:0.1s ease-in;
+}
+
+.triggerOpened {
+  font-size:30px;
+  font-weight:bold;
+}
+
+.collapsibleClosed {
+  outline-style:solid;
+  width:70vw;
+  border-radius:10px;
+  padding:5px;
+  margin-top:20px;
+  margin-bottom:20px;
+  background-color: transparent;
+  transition: 0.1s ease-in;
+}
+
+.collapsibleClosed:hover {
+  background-color: rgb(30, 30, 30);
+  transition: 0.1s ease-in;
+}
+
+.collapsibleOpened {
+  outline-style:solid;
+  width:70vw;
+  border-radius:10px;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:5px;
+  background-color: rgb(30, 30, 30);
+  transition: 0.1s ease-in;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.upload-form {
+  margin-top:-240px;
+}
+
+.backToProblems {
+  width: 400px;
+  margin-bottom: 50px;
+  margin-top:50px;
+}
+
+.submission-img{
+  max-width: 70%;
+  max-height: 1000px;
+  margin-top:-200px;
+}
+
+.textCompleted {
+  font-size:25px;
+  text-align:center;
+  color:lightgreen;
+}
+
+.textNotCompleted {
+  font-size:25px;
+  text-align:center;
+  color:red;
+}
+
+.teamSortBy {
+  margin-left:50%;
+  transform: translate(-50%, 0%);
+  width:500px;
+}
+
+.addUserBtnManageTeams {
+  margin-top:5px;
+}
+
+.manage-users-yeargrad-input {
+  margin-top:5px;
+}
+
+@media (max-width: 780px) {
+	.container {
+		width:70%;
+	}
+  .userInfoRows {
+    width:100%;
+  }
+  .backToProblems {
+    width:200px;
+  }
+  .teamSortBy {
+    width:300px;
+  }
+}
