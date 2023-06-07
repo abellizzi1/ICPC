@@ -8,3 +8,15 @@ This website accomplishes the following things:
 - Gives anyone the ability to create and join a team
 - Ranks individuals within teams and organizations based on skill level
 - Displays statistics for each individual based on the amount of programming problems they've compelted and their ranking in Codeforces, Leetcode, and Uhunt
+
+Since this was a group project, I did not create the whole thing. I created many endpoints and service methods in the backend, and I also created a lot of the pages in the frontend. List of pages I had major contributions to:
+- CreateTeamPage
+- DashboardPage
+- GraduatedArchivePage
+- ManageProblemsPage
+- ManageTeamsPage
+- ManageUsersPage
+- ProblemsPage
+- UserInfoPage
+- UserStatsPage
+- ViewProblemPage
