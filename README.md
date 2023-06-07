@@ -19,3 +19,23 @@ Since this was a group project, I did not create the whole thing. I created many
 ![Login and Registration](https://github.com/abellizzi1/ICPC/blob/main/README-pics/LoginRegistration.png)
 
 ![Update User Details](https://github.com/abellizzi1/ICPC/blob/main/README-pics/UpdateUserDetails.png)
+
+![My Team](https://github.com/abellizzi1/ICPC/blob/main/README-pics/MyTeam.png)
+
+![Register New Organization](https://github.com/abellizzi1/ICPC/blob/main/README-pics/RegisterNewOrg.png)
+
+![Manage Problems](https://github.com/abellizzi1/ICPC/blob/main/README-pics/ManageProblems.png)
+
+![Manage Users](https://github.com/abellizzi1/ICPC/blob/main/README-pics/ManageUsers.png)
+
+![Manage Teams](https://github.com/abellizzi1/ICPC/blob/main/README-pics/ManageTeams.png)
+
+![Statistics](https://github.com/abellizzi1/ICPC/blob/main/README-pics/Statistics.png)
+
+![Problem Submission](https://github.com/abellizzi1/ICPC/blob/main/README-pics/ProblemSubmission.png)
+
+![Dashboard](https://github.com/abellizzi1/ICPC/blob/main/README-pics/Dashboard.png)
+
+![Graduated Archive](https://github.com/abellizzi1/ICPC/blob/main/README-pics/GraduatedArchive.png)
+
+![Permissions](https://github.com/abellizzi1/ICPC/blob/main/README-pics/Permissions.png)
