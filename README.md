@@ -13,3 +13,9 @@ Since this was a group project, I did not create the whole thing. I created many
 - UserInfoPage
 - UserStatsPage
 - ViewProblemPage
+
+![Features](https://github.com/abellizzi1/ICPC/blob/main/README-pics/Features.png)
+
+![Login and Registration](https://github.com/abellizzi1/ICPC/blob/main/README-pics/LoginRegistration.png)
+
+![Update User Details](https://github.com/abellizzi1/ICPC/blob/main/README-pics/UpdateUserDetails.png)
